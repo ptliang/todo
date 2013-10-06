@@ -29,8 +29,8 @@
 	<!-- templates -->
 	<script type="text/template" id="item-template">
 		<div class="view">
-			<input class="toggle" type="checkbox" <%= completed ? "checked" : "" =>>
-			<label><%- tile %><label>
+			<input class="toggle" type="checkbox" <%= completed ? "checked" : "" %>>
+			<label><%- title %><label>
 			<button class="destroy"></button>
 		</div>
 		<input class="edit" value="<%- title %>">
@@ -53,6 +53,7 @@
 			<button id="clear-completed">Clear completed (<%= completed %>)</button>
 		<% } %>
 	</script>
+
 	<!-- library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	<script src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
@@ -60,9 +61,9 @@
 	<script src="js/lib/backbone.localStorage-min.js"></script>
 	<script src="js/models/todo.js"></script>
   	<script src="js/collections/todos.js"></script>
-<!--  	<script src="js/views/todos.js"></script> -->
+	<script src="js/views/todos.js"></script>
 	<script src="js/views/app.js"></script>
-<!--	<script src="js/routers/router.js"></script>
-	<script src="js/app.js"></script>* -->
+<!--	<script src="js/routers/router.js"></script> -->
+	<script src="js/app.js"></script>
 	</body>
 </html>

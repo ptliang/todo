@@ -43,7 +43,7 @@ app.AppView = Backbone.View.extend({
 			this.$('#filters li a').removeClass('selected').filter('[href="#/' + (app.TodoFilter || '') + '"]').addClass('selected');
 		} else {
 			this.$main.hide();
-			this.#footer.hide();
+			this.$footer.hide();
 		}
 
 		this.allCheckbox.checked = !remaining;
@@ -69,7 +69,7 @@ app.AppView = Backbone.View.extend({
 
 	newAttributes: function() {
 		return {
-			title: this.$input.val.trim(),
+			title: this.$input.val().trim(),
 			order: app.Todos.nextOrder(),
 			completed: false
 		};
@@ -80,7 +80,7 @@ app.AppView = Backbone.View.extend({
 			return;
 		}
 
-		app.Todos.create(this.newAtributes());
+		app.Todos.create(this.newAttributes());
 		this.$input.val('');
 	},
 

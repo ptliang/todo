@@ -31,4 +31,4 @@ var a = new app.Todo({ title: 'Go to Jamaica.'}),
     c = new app.Todo({ title: 'Go to Disneyland.', completed: true});
 app.Todos = new TodoList([a,b,c]);
 
-console.log(app.Todos.remaining());
+app.Todos.remaining();
