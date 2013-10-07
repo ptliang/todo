@@ -40,7 +40,7 @@ app.AppView = Backbone.View.extend({
 				remaining: remaining
 			}));
 
-			this.$('#filters li a').removeClass('selected').filter('[href="#/' + (app.TodoFilter || '') + '"]').addClass('selected');
+			this.$('#filters li a').removeClass('selected').filter('[href="#/' + ( app.TodoFilter || '' ) + '"]').addClass('selected');
 		} else {
 			this.$main.hide();
 			this.$footer.hide();

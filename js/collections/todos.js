@@ -26,9 +26,11 @@ var TodoList = Backbone.Collection.extend({
 	}
 });
 
-var a = new app.Todo({ title: 'Go to Jamaica.'}),
+/*var a = new app.Todo({ title: 'Go to Jamaica.'}),
     b = new app.Todo({ title: 'Go to China.'}),
     c = new app.Todo({ title: 'Go to Disneyland.', completed: true});
 app.Todos = new TodoList([a,b,c]);
 
-app.Todos.remaining();
+app.Todos.remaining();*/
+
+app.Todos = new TodoList();
